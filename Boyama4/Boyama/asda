@@ -1,0 +1,8 @@
+DateDiff("m", rs("tarih"), Now()) <= 1 And 
+
+<p>Haftanın Kullanıcısı: <% Response.Write HaftaninKullanicisi() %></p>
+
+
+ If Not rs.EOF Then
+        AyinKullancisi = rs("username") & ": " & rs("max_puan")
+    Else
